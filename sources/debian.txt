@@ -33,3 +33,14 @@ Maintainer: Bdale Garbee <bdale@gag.com>
 Architecture: i386
 Version: 1.5-1.1
 
+Package: libgcc1
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 145
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: i386
+Multi-Arch: same
+Source: gcc-4.7 (4.7.2-5)
+Version: 1:4.7.2-5
+
