@@ -1,0 +1,14 @@
+commit 32d24131b2d1d98384b96c80f6cd3482550dc68a
+
+qemu configure
+./configure --disable-system --target-list=i386-linux-user --without-pixman --disable-tools --disable-werror --static --disable-zlib-test
+
+libraries linked in:
+musl-1.1.12
+glib-2.44.1
+
+Sysroot used:
+stage3-armv7a_hardfp-musl-vanilla-20151129.tar.bz2
+glib was rebuilt with static-libs flag
+
+qemu.patch contains some dirty fixes for musl and hack to work with noexec filesystems
