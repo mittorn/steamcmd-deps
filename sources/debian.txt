@@ -1,0 +1,35 @@
+Files from following binary packages from Debian are used:
+
+Package: libc-bin
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 3010
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: i386
+Multi-Arch: foreign
+Source: eglibc
+Version: 2.13-38+deb7u8
+
+Package: tar
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 2461
+Maintainer: Bdale Garbee <bdale@gag.com>
+Architecture: i386
+Multi-Arch: foreign
+Version: 1.26+dfsg-0.1
+
+Package: gzip
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 232
+Maintainer: Bdale Garbee <bdale@gag.com>
+Architecture: i386
+Version: 1.5-1.1
+
