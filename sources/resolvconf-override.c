@@ -86,6 +86,8 @@ int __res_init(void)
 	int ret = f();
 
 	override_ns ();
+	setbuf(stdout, NULL);
+	setbuf(stderr, NULL);
 
 	return ret;
 }
