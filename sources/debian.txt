@@ -44,3 +44,12 @@ Multi-Arch: same
 Source: gcc-4.7 (4.7.2-5)
 Version: 1:4.7.2-5
 
+Package: psmisc
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 660
+Maintainer: Craig Small <csmall@debian.org>
+Architecture: i386
+Version: 22.19-1+deb7u1
+
