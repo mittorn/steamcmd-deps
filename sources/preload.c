@@ -79,6 +79,12 @@ int getaddrinfo(const char *node, const char *service,
 	return f(node, service, hints, res);
 }
 
+int semget()
+{
+    return 0;
+}
+
+
 int __res_init(void)
 {
 	int (*f)() = dlsym (RTLD_NEXT, "__res_init");
