@@ -97,3 +97,23 @@ int __res_init(void)
 
 	return ret;
 }
+
+struct timespec2 {
+    long tv_sec;
+    long tv_nsec;
+};
+
+int nanosleep (struct timespec2 *req, struct timespec2 *rem)
+{
+    static int (*nanosleep_real)(struct timespec2 *, struct timespec2 *) = NULL;
+    struct timespec2 time;
+
+    time.tv_sec = req->tv_sec + 1;
+    time.tv_nsec = req->tv_nsec;
+    if( !nanosleep_real )
+	nanosleep_real = dlsym (RTLD_NEXT, "nanosleep");
+    assert (nanosleep_real);
+    //printf( "nanosleep %ld %ld\n", time.tv_sec, time.tv_nsec );
+
+    return nanosleep_real( &time, rem );
+}
